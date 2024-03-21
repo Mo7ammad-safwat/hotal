@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اتصل بنا</title>
+    <link rel="stylesheet" href="styleS.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">شعار الفندق</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="rooms.html">الغرف</a></li>
+          <li><a href="services.html">الخدمات</a></li>
+          <li><a href="specials.html">العروض الخاصة</a></li>
+          <li><a href="faq.html">الأسئلة الشائعة</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+          <li><a href="booking.html" class="active">حجز</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>اتصل بنا</h1>
+      <form action="contact.php" method="POST">
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">نص الرسالة:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">إرسال</button>
+      </form>
+    </main>
+    <footer>
+      <p>حقوق النشر © 2024 فندقنا الجميل. جميع الحقوق محفوظة.</p>
+    </footer>
+  </body>
+</html>
