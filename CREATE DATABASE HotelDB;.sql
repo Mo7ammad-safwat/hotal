@@ -1,0 +1,16 @@
+CREATE DATABASE HotelDB;
+GO
+
+USE HotelDB;
+GO
+
+CREATE TABLE Bookings
+(
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(255) NOT NULL,
+    Email NVARCHAR(255) NOT NULL,
+    CheckInDate DATE NOT NULL,
+    CheckOutDate DATE NOT NULL,
+    Guests INT NOT NULL
+);
+GO
