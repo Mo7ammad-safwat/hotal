@@ -1,57 +1,57 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>حجز الغرف - فندقنا الجميل</title>
+    <title>Room Booking - Our Beautiful Hotel</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <div class="logo">شعار الفندق</div>
+      <div class="logo">Hotel Logo</div>
       <nav>
         <ul>
-          <li><a href="index.html">الرئيسية</a></li>
-          <li><a href="rooms.html">الغرف</a></li>
-          <li><a href="services.html">الخدمات</a></li>
-          <li><a href="specials.html">العروض الخاصة</a></li>
-          <li><a href="contact.html">اتصل بنا</a></li>
-          <li><a href="booking.html" class='active'>حجز</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="specials.html">Special Offers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="booking.html" class='active'>Booking</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="booking-form">
-        <h1>حجز الغرف</h1>
+        <h1>Room Booking</h1>
         <form action="submit-booking.php" method="POST">
-          <label for="name">الاسم:</label>
+          <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
 
-          <label for="email">البريد الإلكتروني:</label>
+          <label for="email">Email:</label>
           <input type="email" id="email" name="email" required />
           
-          <label for="checkin-date">تاريخ الوصول:</label>
+          <label for="checkin-date">Check-in Date:</label>
           <input type="date" id="checkin-date" name="checkin_date" required />
 
-          <label for="checkout-date">تاريخ المغادرة:</label>
+          <label for="checkout-date">Check-out Date:</label>
           <input type="date" id="checkout-date" name="checkout_date" required />
 
-          <label for="guests">عدد الضيوف:</label>
+          <label for="guests">Number of Guests:</label>
           <input type="number" id="guests" name="guests" min="1" required />
 
-          <label for="room-type">نوع الغرفة:</label>
+          <label for="room-type">Room Type:</label>
           <select id="room-type" name="room_type">
-            <option value="single">فردية</option>
-            <option value="double">مزدوجة</option>
-            <option value="suite">جناح</option>
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="suite">Suite</option>
           </select>
 
-          <button type="submit">تأكيد الحجز</button>
+          <button type="submit">Confirm Booking</button>
         </form>
       </section>
     </main>
     <footer>
-      <p>حقوق النشر © 2024 فندقنا الجميل. جميع الحقوق محفوظة.</p>
+      <p>Copyright © 2024 Our Beautiful Hotel. All rights reserved.</p>
     </footer>
   </body>
 </html>
