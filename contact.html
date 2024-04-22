@@ -8,32 +8,60 @@
   </head>
   <body>
     <header>
-      <div class="logo">Hotel Logo</div>
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="https://thumbs.dreamstime.com/z/hotel-logo-template-background-58362974.jpg"
+            alt="Beautiful Hotel Logo"
+          />
+        </a>
+      </div>
+
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="rooms.html">Rooms</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="specials.html">Special Offers</a></li>
-          <li><a href="contact.html" class='active'>Contact Us</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
           <li><a href="booking.html">Booking</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>Contact Us</h1>
-      <form action="contact.php" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+      <h1>Contact</h1>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+      <section>
+        <h2>Address</h2>
+        <p>123 Business Road, City, State</p>
+        <p>P.O. Box: 4567</p>
+      </section>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+      <section>
+        <h2>Map</h2>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14026.38308471378!2d30.79386073143281!3d28.49171787850707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145b06b569ca46eb%3A0xa344992a2c76e19e!2sBani%20Mazar%2C%20Madinet%20Bani%20Mazar%2C%20Beni%20Mazar%2C%20Menia%20Governorate!5e0!3m2!1sen!2seg!4v1651853337647!5m2!1sen!2seg"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
 
-        <button type="submit">Send</button>
-      </form>
+      <section>
+        <h2>Contact Us</h2>
+        <form action="contact.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
     </main>
     <footer>
       <p>Copyright © 2024 Our Beautiful Hotel. All rights reserved.</p>
